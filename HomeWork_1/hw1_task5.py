@@ -11,5 +11,5 @@ print('Введите координаты точки B:')
 xb = int(input('x = '))
 yb = int(input('y = '))
 
-sqrt = ((xa - xb) ** 2 + (ya - yb) ** 2) ** 0.5
-print(f'A({xa},{ya}); B({xb},{yb}) -> {round(sqrt, 2)}')
+distance = ((xa - xb) ** 2 + (ya - yb) ** 2) ** 0.5
+print(f'A({xa},{ya}); B({xb},{yb}) -> {round(distance, 2)}')
