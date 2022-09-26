@@ -12,5 +12,4 @@ xb = int(input('x = '))
 yb = int(input('y = '))
 
 sqrt = ((xa - xb) ** 2 + (ya - yb) ** 2) ** 0.5
-distance = round(sqrt, 2)
-print('A (', xa, ',', ya, ');', 'B (', xb, ',', yb, ') ->', distance)
+print('A (', xa, ',', ya, ');', 'B (', xb, ',', yb, ') ->', round(sqrt, 2))
