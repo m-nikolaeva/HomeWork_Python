@@ -3,9 +3,11 @@
 import random   
 
 # Вариант 1:
-# list_a = [1, 2, 3, 4, 5]
-# random.shuffle(list_a)
-# print(list_a)
+# n = int(input("Введите количество элементов: "))
+# fisrt_list = [i for i in range(n)]
+# mixed_list = fisrt_list[:]
+# random.shuffle(mixed_list)
+# print(f'Первоначальный список: {fisrt_list} -> перемешанный список: {mixed_list}')
 
 # ==============================
 
