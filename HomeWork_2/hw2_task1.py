@@ -3,7 +3,7 @@
 # 6782 -> 23
 # 0,56 -> 11
 
-number = (input('Введите вещественное число: '))
+number = (input('Введите число: '))
 result = 0
 for i in number:
     if i != '.' and i != ',':   
