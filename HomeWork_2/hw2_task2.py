@@ -6,7 +6,6 @@ number = int(input('Введите число N: '))
 product = 1
 list1 = []
 for i in range(1, number+1):
-    list1.append(str(product))
     product *= i
-    # print(str(product))
-print(', '.join(list1))
+    list1.append(int(product))
+print(f'Набор произведений чисел от 1 до {number} -> {list1}')

@@ -10,6 +10,5 @@ result = 0
 for i in range(n):
     d[j] = round((1 + 1 / j) ** j, 2)
     result += d[j]
-    j += 1
-     
+    j += 1  
 print(f'{d} -> {result}')
