@@ -3,5 +3,14 @@
 # 3 -> 11
 # 2 -> 10
 
-a = 2
-print(bin(a))
+# ВАРИАНТ 1:
+# number = int(input('Введите число: '))
+# print(f'{number:b}')
+
+# ВАРИАНТ 2:
+number = int(input('Введите число: '))
+b = ''
+while number > 0:
+    b = str(number % 2) + b
+    number = number // 2
+print(b)
