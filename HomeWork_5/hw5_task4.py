@@ -1,5 +1,6 @@
 # Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
-# Входные и выходные данные хранятся в отдельных текстовых файлах.
+# Входные и выходные данные хранятся в отдельных текстовых файлах. 
+# работает для символов, но не для цифр((
 
 # сжатие данных
 def compression_rle(txt):
@@ -11,7 +12,7 @@ def compression_rle(txt):
             count += 1
             i += 1
         compression += str(count) + txt[i]
-        i +=1
+        i += 1
     return compression
 
 
@@ -34,11 +35,11 @@ def read_data(file):
     return input_string
 
 
-source_text = 'HomeWork_5/source.txt' #исходный
-compression = 'HomeWork_5/compression.txt'         #сжатый
-reconstitution = 'HomeWork_5/reconstitution.txt'      #восстановленный
+source_text = 'HomeWork_5/source.txt'  # исходный
+compression = 'HomeWork_5/compression.txt'  # сжатый
+reconstitution = 'HomeWork_5/reconstitution.txt'  # восстановленный
 with open(source_text, 'w', encoding="UTF-8") as data:
-    data.write('addddhhhhheeevv')
+    data.write('adddd...hhhh,,,heee////vv')
 print(read_data(source_text))
 print(compression_rle(read_data(source_text)))
 with open(compression, 'w', encoding="UTF-8") as data:
