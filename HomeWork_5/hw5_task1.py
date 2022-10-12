@@ -7,4 +7,3 @@ for word in input_list:
     if text1 not in word:
         result_list.append(word)
 print(' '.join(result_list))
-
