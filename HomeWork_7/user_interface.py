@@ -1,5 +1,5 @@
 from input_data import add_contact
-from contacts_op import find_contact, read_contacts, write_contacts, get_columns
+from contacts_op import read_contacts, get_columns, find_contact, write_contacts
 
 
 def user_interface():
