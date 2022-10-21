@@ -18,15 +18,20 @@ def read_contacts():
         return []
     with open(FILE_NAME, 'r', encoding='UTF-8') as f:
         data = f.read()
-        columns = data[0].strip().split(', ')
-        data = [{columns[i]: user.strip().split(', ')[i] for i in range(len(columns))} for user in data.split()[1:]]
+        print(data) 
+        if "\n" not in data:
+            return []
+        print(data.split("\n"))
+        columns = data.split("\n")[0].strip().split(", ")  
+        data = [{columns[i]: user.strip().split(", ")[i] if user else "" for i in range(len(columns))} for user in data.split("\n")[1:] if user]
+        print(data)
         return data
 
 
 def get_columns(data):
     if not data:
         return ['Фамилия', 'Имя', 'Номер телефона', 'Примечание']
-    columns = data[0].keys()
+    columns = list(data[0].keys())
     return columns
 
 
