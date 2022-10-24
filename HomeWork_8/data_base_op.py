@@ -68,7 +68,7 @@ def deletion_data(data):
                 data.remove(user)
                 flag = True
     if not flag:
-        print('Такого контакта нет')
+        print('Данные не найдены.')
 
 
 def deletion_base(data):
